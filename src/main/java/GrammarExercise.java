@@ -68,7 +68,7 @@ public class GrammarExercise {
         List<String> ans = temp.collect(Collectors.toList());
         int sizeAns=ans.size();
         for (int i = 0; i <sizeAns ; i++) {
-            ans.set(i,ans.get(i).replace("", " "));
+            ans.set(i,ans.get(i).replace("", " ").trim());
         }
         return ans;
     }
